@@ -1,49 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BamsCodeVault.tech</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BamsCodeVault.tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
 
-        <!-- HERO SECTION-->
-         <header class="hero">
-            <h1>Welcome to BamsCodeVault.tech</h1>
-            <p>Your one-stop destination for all things coding and technology.</p>
-            <a href="#about" class="btn">Learn More</a>
-        </header>
+    <!-- HERO SECTION -->
+    <header class="hero fade-in">
+        <h1>Welcome to BamsCodeVault.tech</h1>
+        <p>Your one-stop destination for cybersecurity, coding, and premium tech content.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </header>
 
-        <!-- ABOUT SECTION -->
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>At BamsCodeVault.tech, we are passionate about sharing knowledge and resources
-                related to coding, programming languages, and the latest tech trends. Our mission is to empower developers of all levels to enhance their skills and stay updated with the ever-evolving tech landscape.</p>
-        </section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about fade-in">
+        <h2>About Me</h2>
+        <p>
+            I'm Darias — a cybersecurity engineer and builder of secure systems, labs, and tools.
+            BamsCodeVault.tech is my digital home for projects, research, and hands-on security engineering.
+            My mission is to empower developers and security enthusiasts with real-world tools,
+            labs, and knowledge that strengthen defensive capabilities.
+        </p>
+    </section>
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <h2>Our Projects</h2>
-            <p>Explore our latest coding projects and contributions to the open-source community.</p>
-        </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="fade-in">
+        <h2>Projects & Labs</h2>
 
-            <!-- CONTACT SECTION -->
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions or want to collaborate? Reach out to us!</p>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>  
-        <!-- FOOTER -->
-        <footer class="footer">
-            <p>&copy; 2026 BamsCodeVault.tech. All rights reserved.</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card fade-in">
+            <h3>Defensive Security Radar (SIEM Lab)</h3>
+            <p>
+                A fully engineered Security Information & Event Management (SIEM) environment designed to simulate
+                real-world SOC operations. Built for hands-on threat detection, log analysis, and incident response.
+            </p>
+            <ul>
+                <li><strong>Tools Used:</strong> Wazuh, Suricata, Zeek, Elastic Stack (Elasticsearch + Kibana)</li>
+                <li><strong>Key Features:</strong> Real-time alerts, custom detection rules, dashboards, threat emulation</li>
+                <li><strong>Audience:</strong> SOC analysts, students, blue teamers, cybersecurity engineers</li>
+                <li><strong>Use Cases:</strong> Log analysis, threat hunting, incident response training, SOC operations</li>
+                <li><strong>Lab Components:</strong> Log collection, event correlation, alerting, dashboard creation, threat simulation</li>
+                <li><strong>Learning Outcomes:</strong> SIEM architecture, log analysis techniques, detection rule development, SOC workflows</li>
+                <li><strong>Additional Features:</strong> Custom log generators, attack simulation scripts, incident response playbooks, threat intelligence integration, security monitoring best practices</li>
+                <li><strong>Target Audience:</strong> Security professionals, students, educators, cybersecurity enthusiasts, red teamers, blue teamers</li>
+            </ul>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card fade-in">
+            <h3>Phishing Awareness & Simulation Program</h3>
+            <p>
+                A complete phishing training and simulation suite featuring custom HTML templates, landing pages,
+                tracking mechanisms, and reporting dashboards. Designed to help organizations measure and improve
+                employee security awareness.
+            </p>
+            <ul>
+                <li>Custom phishing templates</li>
+                <li>Credential harvesting simulations</li>
+                <li>Awareness training pages</li>
+                <li>Engagement analytics</li>
+                <li>Reporting dashboards</li>
+                <li>Red team exercises</li>
+                <li>Security awareness campaigns</li>
+                <li>Phishing simulation management</li>
+                <li>Employee training modules</li>
+                <li>Risk assessment tools</li>
+            </ul>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div class="project-card fade-in">
+            <h3>Secure Software Automation Toolkit</h3>
+            <p>
+                A collection of automation scripts and workflows designed to enforce secure development practices,
+                including code scanning, dependency checks, and environment hardening.
+            </p>
+            <ul>
+                <li>Python + Bash automation</li>
+                <li>Static analysis integration</li>
+                <li>Secure configuration enforcement</li>
+                <li>CI/CD pipeline compatibility</li>
+                <li>Compliance reporting</li>
+                <li>Security policy enforcement</li>
+                <li>Vulnerability management</li>
+                <li>Incident response automation</li>
+                <li>Threat intelligence integration</li>
+                <li>Continuous monitoring</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact</h2>
+        <p>Have questions or want to collaborate? Reach out!</p>
+
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 BamsCodeVault.tech — Built by Darias</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
