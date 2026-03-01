@@ -1,118 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BamsCodeVault.tech</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BamsCodeVault.tech | Ethical Hacking & Development Lab</title>
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
 
 <body>
+  <div class="scanline-overlay"></div>
 
-    <!-- HERO SECTION -->
-    <header class="hero fade-in">
-        <h1>Welcome to BamsCodeVault.tech</h1>
-        <p>Your one-stop destination for cybersecurity, coding, and premium tech content.</p>
-        <a href="#about" class="btn">Learn More</a>
-    </header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">&lt;/&gt;</span>
+      <span class="logo-text">BamsCodeVault<span class="logo-tech">.tech</span></span>
+    </div>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about fade-in">
-        <h2>About Me</h2>
-        <p>
-            I'm Darias — a cybersecurity engineer and builder of secure systems, labs, and tools.
-            BamsCodeVault.tech is my digital home for projects, research, and hands-on security engineering.
-            My mission is to empower developers and security enthusiasts with real-world tools,
-            labs, and knowledge that strengthen defensive capabilities.
-        </p>
-    </section>
+    <nav class="main-nav">
+      <button class="nav-btn" data-section="hero">Home</button>
+      <button class="nav-btn" data-section="services">Services</button>
+      <button class="nav-btn" data-section="videos">Videos</button>
+      <button class="nav-btn" data-section="frp">FRP Bypass</button>
+      <button class="nav-btn" data-section="contact">Contact</button>
+    </nav>
+  </header>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="fade-in">
-        <h2>Projects & Labs</h2>
+  <!-- HERO -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-left">
+      <div class="hero-badge">Ethical Hacker • Developer • Educator</div>
 
-        <!-- PROJECT CARD 1 -->
-        <div class="project-card fade-in">
-            <h3>Defensive Security Radar (SIEM Lab)</h3>
-            <p>
-                A fully engineered Security Information & Event Management (SIEM) environment designed to simulate
-                real-world SOC operations. Built for hands-on threat detection, log analysis, and incident response.
-            </p>
-            <ul>
-                <li><strong>Tools Used:</strong> Wazuh, Suricata, Zeek, Elastic Stack (Elasticsearch + Kibana)</li>
-                <li><strong>Key Features:</strong> Real-time alerts, custom detection rules, dashboards, threat emulation</li>
-                <li><strong>Audience:</strong> SOC analysts, students, blue teamers, cybersecurity engineers</li>
-                <li><strong>Use Cases:</strong> Log analysis, threat hunting, incident response training, SOC operations</li>
-                <li><strong>Lab Components:</strong> Log collection, event correlation, alerting, dashboard creation, threat simulation</li>
-                <li><strong>Learning Outcomes:</strong> SIEM architecture, log analysis techniques, detection rule development, SOC workflows</li>
-                <li><strong>Additional Features:</strong> Custom log generators, attack simulation scripts, incident response playbooks, threat intelligence integration, security monitoring best practices</li>
-                <li><strong>Target Audience:</strong> Security professionals, students, educators, cybersecurity enthusiasts, red teamers, blue teamers</li>
-            </ul>
+      <h1 class="hero-title">
+        Colorful. Ethical. Hacker Energy.<br />
+        <span class="hero-highlight">Welcome to Bams Code Vault.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Custom tutorials, ethical hacking labs, FRP bypass for authorized owners, and full‑stack builds for web, mobile, and desktop.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn primary" data-section="services">Explore Services</button>
+        <button class="btn ghost" data-section="videos">Watch Kali Sessions</button>
+      </div>
+
+      <div class="hero-terminal">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">kali@bamscodevault:~$</span>
+        </div>
+        <div class="terminal-body">
+          <p>&gt; Initializing secure environment...</p>
+          <p>&gt; Loading neon hacker UI...</p>
+          <p>&gt; Ready. Choose your path.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card">
+        <div class="glow-border"></div>
+        <img src="assets/your-photo.jpg" alt="Your Photo" class="profile-photo" />
+        <div class="profile-info">
+          <h2>@bamscodevault</h2>
+          <p>Ethical hacker & full‑stack builder. I build tools, tutorials, and systems that actually teach and protect.</p>
+        </div>
+      </div>
+
+      <div class="status-card">
+        <h3>Live System Status</h3>
+        <ul>
+          <li><span class="status-label">Kali Lab:</span> <span class="status-pill online">Online</span></li>
+          <li><span class="status-label">Custom Builds:</span> <span class="status-pill">Open Slots</span></li>
+          <li><span class="status-label">FRP Requests:</span> <span class="status-pill limited">Limited</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services-section">
+    <h2 class="section-title">Services Vault</h2>
+    <p class="section-subtitle">Every service is handcrafted, ethical, and designed to level you up.</p>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <h3>Interactive Tutorials</h3>
+        <p>Step‑by‑step labs delivered via email, SMS/MMS, physical mail, or Dropbox link.</p>
+        <button class="btn small">View Tutorial Packs</button>
+      </article>
+
+      <article class="service-card service-card-warning">
+        <h3>FRP Bypass (Authorized Only)</h3>
+        <p>Legitimate FRP bypass assistance for verified device owners.</p>
+        <button class="btn small">Request FRP Help</button>
+      </article>
+
+      <article class="service-card">
+        <h3>Kali Linux Video Lab</h3>
+        <p>Watch ethical hacking walkthroughs, tool breakdowns, and real-world scenarios.</p>
+        <button class="btn small">Browse Videos</button>
+      </article>
+
+      <article class="service-card">
+        <h3>Web & Software Development</h3>
+        <p>Custom websites, apps, and tools built with security in mind.</p>
+        <button class="btn small">Start a Build Request</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos" class="section videos-section">
+    <h2 class="section-title">Video Lab</h2>
+    <p class="section-subtitle">A full library of Kali & ethical hacking sessions is coming soon.</p>
+  </section>
+
+  <!-- FRP -->
+  <section id="frp" class="section frp-section">
+    <h2 class="section-title">Authorized FRP Bypass</h2>
+    <p class="section-subtitle">Proof of ownership is required before any FRP assistance.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Open a Ticket</h2>
+    <p class="section-subtitle">Tell me what you need — tutorials, FRP help, or a full dev build.</p>
+
+    <form id="contact-form" class="contact-form">
+      <div class="form-row">
+        <div class="form-field">
+          <label>Name</label>
+          <input type="text" id="name" required />
         </div>
 
-        <!-- PROJECT CARD 2 -->
-        <div class="project-card fade-in">
-            <h3>Phishing Awareness & Simulation Program</h3>
-            <p>
-                A complete phishing training and simulation suite featuring custom HTML templates, landing pages,
-                tracking mechanisms, and reporting dashboards. Designed to help organizations measure and improve
-                employee security awareness.
-            </p>
-            <ul>
-                <li>Custom phishing templates</li>
-                <li>Credential harvesting simulations</li>
-                <li>Awareness training pages</li>
-                <li>Engageing dashboards</li>
-                <li>Red tment analytics</li>
-                <li>Reporteam exercises</li>
-                <li>Security awareness campaigns</li>
-                <li>Phishing simulation management</li>
-                <li>Employee training modules</li>
-                <li>Risk assessment tools</li>
-            </ul>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" id="email" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label>Service Type</label>
+          <select id="service-type" required>
+            <option value="">Select</option>
+            <option value="tutorials">Tutorial Pack</option>
+            <option value="frp">FRP Bypass</option>
+            <option value="videos">Video Access</option>
+            <option value="dev">Custom Development</option>
+          </select>
         </div>
 
-        <!-- PROJECT CARD 3 -->
-        <div class="project-card fade-in">
-            <h3>Secure Software Automation Toolkit</h3>
-            <p>
-                A collection of automation scripts and workflows designed to enforce secure development practices,
-                including code scanning, dependency checks, and environment hardening.
-            </p>
-            <ul>
-                <li>Python + Bash automation</li>
-                <li>Static analysis integration</li>
-                <li>Secure configuration enforcement</li>
-                <li>CI/CD pipeline compatibility</li>
-                <li>Compliance reporting</li>
-                <li>Security policy enforcement</li>
-                <li>Vulnerability management</li>
-                <li>Incident response automation</li>
-                <li>Threat intelligence integration</li>
-                <li>Continuous monitoring</li>
-            </ul>
+        <div class="form-field">
+          <label>Delivery Method</label>
+          <select id="delivery">
+            <option value="email">Email</option>
+            <option value="sms">SMS / MMS</option>
+            <option value="mail">Physical Mail</option>
+            <option value="dropbox">Dropbox Link</option>
+          </select>
         </div>
+      </div>
 
-    </section>
+      <div class="form-field">
+        <label>Message</label>
+        <textarea id="message" rows="5" required></textarea>
+      </div>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact fade-in">
-        <h2>Contact</h2>
-        <p>Have questions or want to collaborate? Reach out!</p>
+      <button type="submit" class="btn primary">Submit Request</button>
+    </form>
+  </section>
 
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> BamsCodeVault.tech</p>
+  </footer>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>&copy; 2026 BamsCodeVault.tech — Built by Darias</p>
-    </footer>
-
-    <script src="scripts/main.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
