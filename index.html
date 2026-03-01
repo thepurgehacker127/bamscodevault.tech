@@ -8,176 +8,177 @@
 </head>
 
 <body>
-  <div class="scanline-overlay"></div>
 
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="logo">
-      <span class="logo-mark">&lt;/&gt;</span>
-    </div>
+  <header class="edu-header">
+    <div class="edu-header-inner">
+      <div class="edu-logo">BamsCodeVault.tech</div>
 
-    <nav class="main-nav">
-      <button class="nav-btn" data-section="hero">Home</button>
-      <button class="nav-btn" data-section="services">Services</button>
-      <button class="nav-btn" data-section="videos">Videos</button>
-      <button class="nav-btn" data-section="frp">FRP Bypass</button>
-      <button class="nav-btn" data-section="contact">Contact</button>
-    </nav>
+      <nav class="edu-nav">
+        <a href="#services">Services</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#projects">Projects</a>
+        <a href="#subscription">Subscription</a>
+        <a href="#videos">Videos</a>
+        <a href="#frp">FRP</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <!-- HERO -->
-  <section id="hero" class="section hero-section">
-    <div class="hero-left">
-      <div class="hero-badge">Ethical Hacker • Developer • Educator</div>
-
-      <h1 class="hero-title">
-        Colorful. Ethical. Hacker Energy.<br />
-        <span class="hero-highlight">Welcome to Bams Code Vault.</span>
-      </h1>
-
+  <section class="hero-edu">
+    <div class="hero-inner">
+      <h1 class="hero-title">BamsCodeVault.tech</h1>
       <p class="hero-subtitle">
-        Custom tutorials, ethical hacking labs, FRP bypass for authorized owners, and full‑stack builds for web, mobile, and desktop.
+        Ethical hacking labs, tutorials, tools, and secure development — built for learners, builders, and defenders.
       </p>
 
       <div class="hero-actions">
         <button class="btn primary" data-section="services">Explore Services</button>
-        <button class="btn ghost" data-section="videos">Watch Kali Sessions</button>
-      </div>
-
-      <div class="hero-terminal">
-        <div class="terminal-header">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="terminal-title">kali@bamscodevault:~$</span>
-        </div>
-        <div class="terminal-body">
-          <p>&gt; Initializing secure environment...</p>
-          <p>&gt; Loading neon hacker UI...</p>
-          <p>&gt; Ready. Choose your path.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="profile-card">
-        <div class="glow-border"></div>
-        <img src="assets/your-photo.jpg" alt="Your Photo" class="profile-photo" />
-        <div class="profile-info">
-          <h2>@bamscodevault</h2>
-          <p>Ethical hacker & full‑stack builder. I build tools, tutorials, and systems that actually teach and protect.</p>
-        </div>
-      </div>
-
-      <div class="status-card">
-        <h3>Live System Status</h3>
-        <ul>
-          <li><span class="status-label">Kali Lab:</span> <span class="status-pill online">Online</span></li>
-          <li><span class="status-label">Custom Builds:</span> <span class="status-pill">Open Slots</span></li>
-          <li><span class="status-label">FRP Requests:</span> <span class="status-pill limited">Limited</span></li>
-        </ul>
+        <button class="btn ghost" data-section="tutorials">Browse Tutorials</button>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="section services-section">
-    <h2 class="section-title">Services Vault</h2>
-    <p class="section-subtitle">Every service is handcrafted, ethical, and designed to level you up.</p>
+  <section id="services" class="edu-section">
+    <h2 class="section-title">Services</h2>
+    <p class="section-subtitle">Professional, ethical, and built for real‑world learning.</p>
 
-    <div class="services-grid">
-      <article class="service-card">
+    <div class="edu-grid">
+      <div class="edu-card">
         <h3>Interactive Tutorials</h3>
-        <p>Step‑by‑step labs delivered via email, SMS/MMS, physical mail, or Dropbox link.</p>
-        <button class="btn small">View Tutorial Packs</button>
-      </article>
+        <p>Hands‑on labs delivered via email, SMS, or Dropbox.</p>
+      </div>
 
-      <article class="service-card service-card-warning">
+      <div class="edu-card">
         <h3>FRP Bypass (Authorized Only)</h3>
-        <p>Legitimate FRP bypass assistance for verified device owners.</p>
-        <button class="btn small">Request FRP Help</button>
-      </article>
+        <p>Secure, verified FRP assistance for legitimate owners.</p>
+      </div>
 
-      <article class="service-card">
+      <div class="edu-card">
         <h3>Kali Linux Video Lab</h3>
-        <p>Watch ethical hacking walkthroughs, tool breakdowns, and real-world scenarios.</p>
-        <button class="btn small">Browse Videos</button>
-      </article>
+        <p>Walkthroughs, tool breakdowns, and real‑world scenarios.</p>
+      </div>
 
-      <article class="service-card">
-        <h3>Web & Software Development</h3>
-        <p>Custom websites, apps, and tools built with security in mind.</p>
-        <button class="btn small">Start a Build Request</button>
-      </article>
+      <div class="edu-card">
+        <h3>Custom Development</h3>
+        <p>Websites, apps, and tools built with security in mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUTORIALS -->
+  <section id="tutorials" class="edu-section alt">
+    <h2 class="section-title">Tutorial Library</h2>
+    <p class="section-subtitle">Free and premium cybersecurity learning paths.</p>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3>Beginner Cyber Pack</h3>
+        <span class="price free">FREE</span>
+        <p>Linux basics, networking, and ethical hacking fundamentals.</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>Kali Mastery</h3>
+        <span class="price">$19.99</span>
+        <p>Advanced labs covering Nmap, Burp, Metasploit, and more.</p>
+      </div>
+
+      <div class="edu-card">
+        <h3>Red Team Toolkit</h3>
+        <span class="price">$29.99</span>
+        <p>Payloads, privilege escalation, pivoting, and stealth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT DOWNLOADS -->
+  <section id="projects" class="edu-section">
+    <h2 class="section-title">Downloadable Projects</h2>
+    <p class="section-subtitle">Tools and utilities built by Darias.</p>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3>Windows Hardening Script</h3>
+        <button class="btn small">Download</button>
+      </div>
+
+      <div class="edu-card">
+        <h3>Network Scanner</h3>
+        <button class="btn small">Download</button>
+      </div>
+
+      <div class="edu-card">
+        <h3>Log Analyzer</h3>
+        <button class="btn small">Download</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIPTION -->
+  <section id="subscription" class="edu-section alt">
+    <h2 class="section-title">Membership Plans</h2>
+    <p class="section-subtitle">Unlock premium content and tools.</p>
+
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3>Free Tier</h3>
+        <ul>
+          <li>Basic tutorials</li>
+          <li>Community access</li>
+        </ul>
+        <span class="price free">FREE</span>
+      </div>
+
+      <div class="edu-card">
+        <h3>Pro Tier</h3>
+        <ul>
+          <li>All tutorials</li>
+          <li>Premium downloads</li>
+          <li>Private support</li>
+        </ul>
+        <span class="price">$9.99/mo</span>
+      </div>
+
+      <div class="edu-card">
+        <h3>Elite Tier</h3>
+        <ul>
+          <li>1‑on‑1 mentoring</li>
+          <li>Custom tools</li>
+          <li>Priority support</li>
+        </ul>
+        <span class="price">$29.99/mo</span>
+      </div>
     </div>
   </section>
 
   <!-- VIDEOS -->
-  <section id="videos" class="section videos-section">
+  <section id="videos" class="edu-section">
     <h2 class="section-title">Video Lab</h2>
-    <p class="section-subtitle">A full library of Kali & ethical hacking sessions is coming soon.</p>
+    <p class="section-subtitle">Kali Linux & ethical hacking sessions coming soon.</p>
   </section>
 
   <!-- FRP -->
-  <section id="frp" class="section frp-section">
+  <section id="frp" class="edu-section alt">
     <h2 class="section-title">Authorized FRP Bypass</h2>
-    <p class="section-subtitle">Proof of ownership is required before any FRP assistance.</p>
+    <p class="section-subtitle">Proof of ownership required.</p>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section contact-section">
-    <h2 class="section-title">Open a Ticket</h2>
-    <p class="section-subtitle">Tell me what you need — tutorials, FRP help, or a full dev build.</p>
+  <section id="contact" class="edu-section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">Open a ticket for tutorials, FRP help, or dev builds.</p>
 
     <form id="contact-form" class="contact-form">
-      <div class="form-row">
-        <div class="form-field">
-          <label>Name</label>
-          <input type="text" id="name" required />
-        </div>
-
-        <div class="form-field">
-          <label>Email</label>
-          <input type="email" id="email" required />
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-field">
-          <label>Service Type</label>
-          <select id="service-type" required>
-            <option value="">Select</option>
-            <option value="tutorials">Tutorial Pack</option>
-            <option value="frp">FRP Bypass</option>
-            <option value="videos">Video Access</option>
-            <option value="dev">Custom Development</option>
-          </select>
-        </div>
-
-        <div class="form-field">
-          <label>Delivery Method</label>
-          <select id="delivery">
-            <option value="email">Email</option>
-            <option value="sms">SMS / MMS</option>
-            <option value="mail">Physical Mail</option>
-            <option value="dropbox">Dropbox Link</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-field">
-        <label>Message</label>
-        <textarea id="message" rows="5" required></textarea>
-      </div>
-
-      <button type="submit" class="btn primary">Submit Request</button>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button class="btn primary">Submit</button>
     </form>
   </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© <span id="year"></span> BamsCodeVault.tech</p>
-  </footer>
 
   <script src="scripts/main.js"></script>
 </body>
