@@ -171,3 +171,49 @@ body {
 .contact-form button {
   width: 100%;
 }
+
+/* ===== HERO GRID WITH PROFILE PHOTO ===== */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-left {
+  text-align: left;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-profile-photo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #30363d;
+  box-shadow: 0 0 18px rgba(88, 166, 255, 0.35);
+}
+
+/* Mobile responsive */
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-profile-photo {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+}
