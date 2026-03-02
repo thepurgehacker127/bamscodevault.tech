@@ -53,3 +53,14 @@ document.querySelectorAll("[data-section], .edu-nav a").forEach(link => {
     if (section) section.scrollIntoView({ behavior: "smooth" });
   });
 });
+// Smooth scrolling for nav + buttons
+document.querySelectorAll("[data-section], .edu-nav a").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const id = link.getAttribute("data-section") || link.getAttribute("href").replace("#", "");
+    const section = document.getElementById(id);
+    if (section) section.scrollIntoView({ behavior: "smooth" });
+  });
+});
+// Auto-update footer year
+document.getElementById("year").textContent = new Date().getFullYear();
