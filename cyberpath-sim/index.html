@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPath Sim | Paths & Rooms</title>
+  <meta name="description" content="CyberPath Sim landing page with dashboard, learning paths, and first room access." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="sim-header">
+    <div class="sim-shell">
+      <div class="sim-brand">CyberPath Sim</div>
+
+      <nav class="sim-nav">
+        <a href="/cyberpath-sim/academy/">Academy</a>
+        <a href="/cyberpath-sim/">Home</a>
+        <a href="/cyberpath-sim/dashboard/">Dashboard</a>
+        <a href="/cyberpath-sim/paths/blue-team/lesson-1/">Blue Team Lesson</a>
+        <a href="/cyberpath-sim/sims/soc-log-triage/">First Sim</a>
+        <a href="/">Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="sim-shell sim-main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Train like a cyber analyst</p>
+        <h1>Guided paths. Hands-on rooms. Real progression.</h1>
+        <p class="hero-text">
+          CyberPath Sim is your training zone inside this website.
+          Start with lessons, answer checkpoint questions, pass the final quiz,
+          then unlock hands-on rooms and track progress from the dashboard.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-secondary" href="/cyberpath-sim/academy/">Open Academy</a>
+          <a class="btn btn-primary" href="/cyberpath-sim/dashboard/">Open Dashboard</a>
+          <a class="btn btn-secondary" href="/cyberpath-sim/paths/blue-team/lesson-1/">Start Blue Team Lesson</a>
+          <a class="btn btn-secondary" href="/">Back to Main Site</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-stat">
+          <span class="stat-label">Current Lesson</span>
+          <strong>Blue Team Lesson 1</strong>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-label">Current Room</span>
+          <strong>SOC Log Triage</strong>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-label">Format</span>
+          <strong>Lesson → Quiz → Room</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <p class="eyebrow">Choose your path</p>
+        <h2>Role-based learning tracks</h2>
+      </div>
+
+      <div class="path-grid">
+        <article class="path-card">
+          <p class="path-tag">Blue Team</p>
+          <h3>Defend and investigate</h3>
+          <p>
+            Start with lessons, answer checkpoint questions, and unlock rooms like
+            SOC Log Triage and Phishing Email Review.
+          </p>
+          <a class="btn btn-secondary" href="/cyberpath-sim/paths/blue-team/lesson-1/">Start Blue Team Path</a>
+        </article>
+
+        <article class="path-card">
+          <p class="path-tag">Red Team</p>
+          <h3>Think like an operator</h3>
+          <p>
+            Train on recon planning, web app testing logic, attack-path thinking,
+            and reporting without leaving the safe lab format.
+          </p>
+          <span class="pill">Coming Soon</span>
+        </article>
+
+        <article class="path-card">
+          <p class="path-tag">Mixed</p>
+          <h3>Bridge both sides</h3>
+          <p>
+            Move through purple-team style validation, ATT&CK mapping, control gap review,
+            and cross-team decision making.
+          </p>
+          <span class="pill">Coming Soon</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sim-footer">
+    <p>© <span id="year"></span> BamsCodeVault.tech — CyberPath Sim</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPath Sim | Phishing Email Review</title>
+  <meta name="description" content="Phishing Email Review sim with header, sender, and URL analysis." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="sim-header">
+    <div class="sim-shell">
+      <div class="sim-brand">CyberPath Sim</div>
+      <nav class="sim-nav">
+        <a href="/cyberpath-sim/">Home</a>
+        <a href="/cyberpath-sim/dashboard/">Dashboard</a>
+        <a href="/cyberpath-sim/sims/soc-log-triage/">SOC Log Triage</a>
+        <a href="/cyberpath-sim/sims/phishing-email-review/">Phishing Review</a>
+        <a href="/">Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="sim-shell sim-main">
+    <section class="sim-hero">
+      <div>
+        <p class="eyebrow">Blue Team Room</p>
+        <h1>Phishing Email Review</h1>
+        <p class="muted">
+          Review an inbox sample, inspect the suspicious message, analyze the sender, headers,
+          and URL, then decide whether the email should be escalated as phishing.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn ghost" href="/cyberpath-sim/dashboard/">Back to Dashboard</a>
+      </div>
+    </section>
+
+    <section class="sim-grid">
+      <article class="sim-card">
+        <div class="sim-terminal-head">
+          <div>
+            <p class="eyebrow">Evidence Console</p>
+            <h2>Email Investigation Panel</h2>
+          </div>
+          <div class="sim-hint">Try: <code>help</code>, <code>inbox</code>, <code>open 2</code>, <code>sender 2</code>, <code>headers 2</code>, <code>url 2</code>, <code>verdict phishing</code></div>
+        </div>
+
+        <div id="terminalOutput" class="sim-terminal-output"></div>
+
+        <form id="terminalForm" class="sim-terminal-form">
+          <span class="prompt">analyst@cyberpath:~$</span>
+          <input id="terminalInput" type="text" autocomplete="off" placeholder="Type a command..." />
+          <button class="btn primary" type="submit">Run</button>
+        </form>
+      </article>
+
+      <article class="sim-card">
+        <p class="eyebrow">Objectives</p>
+        <h2>Room tasks</h2>
+
+        <ol class="sim-objectives">
+          <li id="obj-inbox">Review the inbox summary.</li>
+          <li id="obj-open">Open the suspicious email.</li>
+          <li id="obj-sender">Inspect the sender details.</li>
+          <li id="obj-headers">Inspect the email headers.</li>
+          <li id="obj-url">Inspect the embedded URL.</li>
+          <li id="obj-verdict">Choose the correct verdict.</li>
+        </ol>
+
+        <div class="sim-decision-wrap">
+          <label for="verdictSelect">Final verdict</label>
+          <select id="verdictSelect">
+            <option value="">Select one</option>
+            <option value="legit">Legitimate business email</option>
+            <option value="spam">Low-risk spam</option>
+            <option value="phishing">Phishing - escalate and block</option>
+            <option value="unknown">Needs more evidence</option>
+          </select>
+        </div>
+
+        <div class="sim-actions">
+          <button id="finishBtn" class="btn primary" type="button">Finish & Save</button>
+          <p id="finishMessage" class="muted"></p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

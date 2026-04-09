@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPath Sim | Lesson</title>
+  <meta name="description" content="CyberPath Sim lesson page." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="academy-header">
+    <div class="academy-shell">
+      <div class="academy-brand">CyberPath Sim Academy</div>
+      <nav class="academy-nav">
+        <a href="/cyberpath-sim/">Home</a>
+        <a href="/cyberpath-sim/dashboard/">Dashboard</a>
+        <a href="/cyberpath-sim/academy/">Academy</a>
+        <a href="/">Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="academy-shell academy-main">
+    <section id="lessonHero" class="hero"></section>
+
+    <section class="lesson-grid">
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson content</p>
+        <h2 id="lessonTitle">Lesson</h2>
+        <div id="lessonMeta" class="meta-row"></div>
+        <div id="lessonBody" class="lesson-body"></div>
+
+        <div class="video-wrap">
+          <p class="eyebrow">Video</p>
+          <div id="videoSlot" class="video-slot"></div>
+        </div>
+      </article>
+
+      <article class="card quiz-card">
+        <p class="eyebrow">Checkpoint questions</p>
+        <h2>Check your understanding</h2>
+
+        <form id="checkpointForm" class="quiz-form">
+          <div class="quiz-item">
+            <label id="cp1Label" for="cp1"></label>
+            <select id="cp1"></select>
+          </div>
+
+          <div class="quiz-item">
+            <label id="cp2Label" for="cp2"></label>
+            <select id="cp2"></select>
+          </div>
+
+          <div class="quiz-item">
+            <label id="cp3Label" for="cp3"></label>
+            <select id="cp3"></select>
+          </div>
+
+          <button id="checkpointBtn" class="btn primary" type="button">Grade Checkpoints</button>
+          <p id="checkpointMessage" class="muted"></p>
+        </form>
+
+        <hr class="divider" />
+
+        <p class="eyebrow">Final quiz</p>
+        <h2>Pass to complete the lesson</h2>
+
+        <form id="finalQuizForm" class="quiz-form">
+          <div class="quiz-item">
+            <label id="fq1Label" for="fq1"></label>
+            <select id="fq1"></select>
+          </div>
+
+          <div class="quiz-item">
+            <label id="fq2Label" for="fq2"></label>
+            <select id="fq2"></select>
+          </div>
+
+          <div class="quiz-item">
+            <label id="fq3Label" for="fq3"></label>
+            <select id="fq3"></select>
+          </div>
+
+          <button id="finalQuizBtn" class="btn primary" type="button">Submit Final Quiz</button>
+          <p id="finalQuizMessage" class="muted"></p>
+        </form>
+
+        <div class="unlock-box">
+          <p class="eyebrow">Next step</p>
+          <a id="nextActionBtn" class="btn secondary" href="/cyberpath-sim/dashboard/">Back to Dashboard</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./lessons.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

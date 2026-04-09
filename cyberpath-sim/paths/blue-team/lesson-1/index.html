@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPath Sim | Blue Team Lesson 1</title>
+  <meta name="description" content="Blue Team Lesson 1: What a SOC analyst does." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="lesson-header">
+    <div class="lesson-shell">
+      <div class="lesson-brand">CyberPath Sim</div>
+
+      <nav class="lesson-nav">
+        <a href="/cyberpath-sim/">Home</a>
+        <a href="/cyberpath-sim/dashboard/">Dashboard</a>
+        <a href="/cyberpath-sim/paths/blue-team/lesson-1/">Lesson 1</a>
+        <a href="/">Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="lesson-shell lesson-main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Blue Team Path</p>
+        <h1>Lesson 1 — What a SOC analyst does</h1>
+        <p class="muted">
+          Learn the basic job of a SOC analyst, how alerts are handled, what evidence matters,
+          and how analysts decide whether activity is benign, suspicious, or malicious.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn ghost" href="/cyberpath-sim/dashboard/">Back to Dashboard</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card lesson-card">
+        <p class="eyebrow">Lesson</p>
+        <h2>SOC fundamentals</h2>
+
+        <div class="lesson-copy">
+          <p>
+            A SOC analyst monitors alerts, reviews logs, investigates unusual behavior,
+            and determines whether the activity is safe, suspicious, or malicious.
+          </p>
+
+          <p>
+            Analysts usually begin with alert context, then look at supporting evidence like
+            authentication logs, host activity, user context, asset value, and network behavior.
+          </p>
+
+          <p>
+            Their job is not just to "find bad stuff." It is to make fast, accurate decisions,
+            reduce false positives, escalate real incidents, and document what happened clearly.
+          </p>
+
+          <p>
+            A strong SOC analyst asks:
+          </p>
+
+          <ul>
+            <li>What triggered this alert?</li>
+            <li>What evidence supports it?</li>
+            <li>What asset or user is involved?</li>
+            <li>What is the immediate risk?</li>
+            <li>What action should happen next?</li>
+          </ul>
+
+          <div class="video-wrap">
+            <p class="eyebrow">Video block</p>
+            <div class="video-placeholder">
+              <strong>Lesson Video Placeholder</strong>
+              <p>Add your YouTube embed or MP4 lesson here later.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card quiz-card">
+        <p class="eyebrow">Checkpoint Questions</p>
+        <h2>Check your understanding</h2>
+
+        <form id="checkpointForm" class="quiz-form">
+          <div class="quiz-item">
+            <label for="q1">1. What is the SOC analyst’s main goal?</label>
+            <select id="q1">
+              <option value="">Select one</option>
+              <option value="a">To hack external targets</option>
+              <option value="b">To review alerts and decide what action should happen next</option>
+              <option value="c">To replace all firewalls manually</option>
+            </select>
+          </div>
+
+          <div class="quiz-item">
+            <label for="q2">2. Which evidence source is useful in triage?</label>
+            <select id="q2">
+              <option value="">Select one</option>
+              <option value="a">Authentication logs</option>
+              <option value="b">Random wallpaper changes</option>
+              <option value="c">Monitor brightness settings only</option>
+            </select>
+          </div>
+
+          <div class="quiz-item">
+            <label for="q3">3. Why does documentation matter?</label>
+            <select id="q3">
+              <option value="">Select one</option>
+              <option value="a">Because the SOC has extra free time</option>
+              <option value="b">Because clear notes help escalation and incident handling</option>
+              <option value="c">Because it replaces evidence collection</option>
+            </select>
+          </div>
+
+          <button class="btn primary" type="button" id="checkpointBtn">Grade Checkpoints</button>
+          <p id="checkpointMessage" class="muted"></p>
+        </form>
+
+        <hr class="divider" />
+
+        <p class="eyebrow">End Quiz</p>
+        <h2>Pass to unlock the room</h2>
+
+        <form id="finalQuizForm" class="quiz-form">
+          <div class="quiz-item">
+            <label for="f1">1. What should a SOC analyst do first?</label>
+            <select id="f1">
+              <option value="">Select one</option>
+              <option value="a">Review alert context and evidence</option>
+              <option value="b">Delete all logs immediately</option>
+              <option value="c">Ignore the alert unless a manager calls</option>
+            </select>
+          </div>
+
+          <div class="quiz-item">
+            <label for="f2">2. What makes a strong triage decision?</label>
+            <select id="f2">
+              <option value="">Select one</option>
+              <option value="a">Guessing quickly without evidence</option>
+              <option value="b">Using alert context, evidence, and risk impact</option>
+              <option value="c">Only checking the username</option>
+            </select>
+          </div>
+
+          <div class="quiz-item">
+            <label for="f3">3. What should happen after a real malicious finding?</label>
+            <select id="f3">
+              <option value="">Select one</option>
+              <option value="a">Escalate and document the incident</option>
+              <option value="b">Hide the alert to reduce workload</option>
+              <option value="c">Wait until next week</option>
+            </select>
+          </div>
+
+          <button class="btn primary" type="button" id="finalQuizBtn">Submit Final Quiz</button>
+          <p id="finalQuizMessage" class="muted"></p>
+        </form>
+
+        <div class="unlock-box">
+          <p class="eyebrow">Unlock</p>
+          <a id="unlockRoomBtn" class="btn secondary disabled" href="/cyberpath-sim/sims/soc-log-triage/">Open SOC Log Triage</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

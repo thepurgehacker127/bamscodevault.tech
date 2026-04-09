@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPath Sim | Dashboard</title>
+  <meta name="description" content="CyberPath Sim dashboard for progress, badges, and simulation results." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="dash-header">
+    <div class="dash-shell">
+      <div class="dash-brand">CyberPath Sim</div>
+
+      <nav class="dash-nav">
+        <a href="/cyberpath-sim/">Home</a>
+        <a href="/cyberpath-sim/dashboard/">Dashboard</a>
+        <a href="/cyberpath-sim/paths/blue-team/lesson-1/">Blue Team Lesson</a>
+        <a href="/cyberpath-sim/sims/soc-log-triage/">SOC Log Triage</a>
+        <a href="/cyberpath-sim/sims/phishing-email-review/">Phishing Review</a>
+        <a href="/">Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="dash-shell dash-main">
+    <section class="dash-hero">
+      <div class="dash-hero-copy">
+        <p class="eyebrow">Career dashboard</p>
+        <h1>Your progress hub</h1>
+        <p class="muted">
+          Track your recommended path, completed lessons, completed rooms, earned badges,
+          and your current training progress.
+        </p>
+      </div>
+
+      <div class="dash-hero-actions">
+        <a class="btn primary" href="/cyberpath-sim/paths/blue-team/lesson-1/">Continue Path</a>
+        <button id="dashClearBtn" class="btn ghost" type="button">Reset Progress</button>
+      </div>
+    </section>
+
+    <section class="dash-grid">
+      <article class="dash-card">
+        <div class="dash-card-top">
+          <div>
+            <p class="eyebrow">Best fit</p>
+            <h2 id="dashRole">No result yet</h2>
+          </div>
+          <div id="dashBadge" class="pill">No badge</div>
+        </div>
+
+        <p id="dashMeta" class="muted">Complete the intake on the CyberPath Sim landing page to generate your first recommendation.</p>
+
+        <div class="score-wrap">
+          <span class="score-label">Fit score</span>
+          <span id="dashScore" class="score-number">0</span>
+        </div>
+      </article>
+
+      <article class="dash-card">
+        <p class="eyebrow">Overall Progress</p>
+        <h2>Training completion</h2>
+
+        <div class="progress-wrap">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <div class="progress-meta">
+            <span id="progressText">0% complete</span>
+            <span id="progressCount">0 / 3 complete</span>
+          </div>
+        </div>
+
+        <p class="eyebrow section-gap">Skills demonstrated</p>
+        <div id="dashSkills" class="chip-wrap">
+          <span class="chip muted-chip">No skills yet</span>
+        </div>
+
+        <p class="eyebrow section-gap">Recommended next skills</p>
+        <div id="dashNextSkills" class="chip-wrap">
+          <span class="chip muted-chip">Run simulations to unlock recommendations</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="dash-card">
+      <div class="dash-card-top">
+        <div>
+          <p class="eyebrow">Badge strip</p>
+          <h2>Earned badges</h2>
+        </div>
+      </div>
+
+      <div id="badgeStrip" class="badge-strip">
+        <div class="badge-card muted-badge">No badges earned yet</div>
+      </div>
+    </section>
+
+    <section class="dash-card">
+      <div class="dash-card-top">
+        <div>
+          <p class="eyebrow">Simulations & lessons</p>
+          <h2>Path items</h2>
+        </div>
+      </div>
+
+      <div id="simList" class="sim-list"></div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPath Sim | Academy</title>
+  <meta name="description" content="CyberPath Sim academy with 100 lessons, quizzes, and progress tracking." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="academy-header">
+    <div class="academy-shell">
+      <div class="academy-brand">CyberPath Sim Academy</div>
+      <nav class="academy-nav">
+        <a href="/cyberpath-sim/">Home</a>
+        <a href="/cyberpath-sim/dashboard/">Dashboard</a>
+        <a href="/cyberpath-sim/academy/">Academy</a>
+        <a href="/">Main Site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="academy-shell academy-main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Training platform</p>
+        <h1>100 guided lessons</h1>
+        <p class="muted">
+          Structured like a real cyber learning platform: lesson content, checkpoint questions,
+          final quiz, progress saves, and room unlock flow.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn primary" href="/cyberpath-sim/dashboard/">Open Dashboard</a>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="card">
+        <p class="eyebrow">Catalog</p>
+        <h2 id="lessonCount">100</h2>
+        <p class="muted">Lessons available</p>
+      </article>
+
+      <article class="card">
+        <p class="eyebrow">Progress</p>
+        <h2 id="completedCount">0</h2>
+        <p class="muted">Lessons completed</p>
+      </article>
+
+      <article class="card">
+        <p class="eyebrow">Current path</p>
+        <h2>Blue / Red / Mixed</h2>
+        <p class="muted">Choose a lane and build skills step by step.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <div>
+          <p class="eyebrow">Filter</p>
+          <h2>Browse lessons</h2>
+        </div>
+
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Blue Team">Blue Team</button>
+          <button class="filter-btn" data-filter="Red Team">Red Team</button>
+          <button class="filter-btn" data-filter="Mixed">Mixed</button>
+        </div>
+      </div>
+
+      <div id="academyGrid" class="academy-grid"></div>
+    </section>
+  </main>
+
+  <script src="./lessons.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
